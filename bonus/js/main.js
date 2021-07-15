@@ -26,14 +26,21 @@ console.log(eta);
 var Euro_km = 0.21;
 
 var costo_biglietto_standard = (km * Euro_km).toFixed(2);
+console.log(costo_biglietto_standard);
 
 if (eta < 18) {
     var costo_biglietto_under_18 = (costo_biglietto_standard * 0.8).toFixed(2);
+    console.log(costo_biglietto_under_18);
 }
 
 if (eta >= 65) {
     var costo_biglietto_over_65 = (costo_biglietto_standard * 0.6).toFixed(2);
+    console.log(costo_biglietto_over_65);
 }
 
+var costo_biglietto = costo_biglietto_under_18 || costo_biglietto_over_65 || costo_biglietto_standard;
+console.log(costo_biglietto);
 
-    
+document.getElementById("costo_biglietto").innerHTML = costo_biglietto + " €";
+
+

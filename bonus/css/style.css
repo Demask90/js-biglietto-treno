@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/pngtree-train-cartoon-childish-green-food-poster-background-image_132367.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.layover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container h1 ,.container h2,.container h3, .container h4, .container h5{
+    margin: 10px;
+}
+
+  .container h1{
+      font-size: 3em;
+  }
+
+  .container h4:last-child{
+      margin-bottom: 50px;
+  }
+
+  .container h1:last-child{
+      padding-bottom: 20px;
+  }
+
+  #costo_biglietto {
+      color: green;
+      font-size: 3em;
+  }
+
+  /* copiata */
+
+  
